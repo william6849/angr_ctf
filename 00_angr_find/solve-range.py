@@ -22,7 +22,7 @@ def main(argv):
 
   if simgr.found :
     solution_state = simgr.found[0]
-    print(solution_state.solver.eval(input_buf, cast_to=bytes))
+    print(solution_state.solver.eval(input_buf, cast_to=bytes).decode())
   else :
     raise Exception("Path not found.")
 
